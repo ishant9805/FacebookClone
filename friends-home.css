@@ -230,6 +230,18 @@ transition: opacity .5s;
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  /* position: relative; */
+
+}
+.friend-info h4{
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition:text-decoration .5s ease ;
+}
+
+.friend-info h4:hover{
+  text-decoration: underline;
 }
 .btn {
   padding: 0.7rem;
@@ -467,4 +479,67 @@ transition: opacity .5s;
   .nav-middle{
     justify-content: space-between;
   }
+}
+/* ---------Hover user details---------- */
+.hover-div{
+  position: relative;
+}
+.hover-div:hover .hover-details{
+opacity: 1;
+pointer-events: all;
+transition: all 0.5s;
+}
+.hover-details {
+  position: absolute;
+  background-color: white;
+  top:-200px;
+  left: -100px;
+  z-index: 200;
+  width: 400px;
+  height: 200px;
+  padding: 0.1rem 0.5rem;
+  box-shadow: 0 0 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: .7rem;
+}
+.img-div img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+.img-div{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.respond-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 40px;
+  column-gap: .5rem;
+}
+.profile-details div{
+  display: flex;
+  align-items: center;
+  margin: .3rem 0;
+}
+.profile-details div i{
+  font-size: 18px;
+  margin-right: .8rem;
+  color: rgb(85, 85, 85);
 }

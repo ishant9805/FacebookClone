@@ -16,6 +16,12 @@ body {
     top: 50%;
 }
 
+
+.right{
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     background-color: #fff;
     width: 25rem;
@@ -28,6 +34,14 @@ body {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width:810px){
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        margin-bottom: 60px;
+    }
 }
 
 input {

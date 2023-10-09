@@ -7,8 +7,8 @@ body{
     font-size:1.5cm;
     font-family:Arial, Helvetica, sans-serif;
     color:#0073ff;
-    margin-left:505px;
-    margin-top:25px;
+    margin-top: 25px;
+    text-align: center;
 }
 .input_block{
     width:430px;

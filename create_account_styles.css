@@ -136,3 +136,20 @@ fieldset{
     color:#0073ff;
     cursor:pointer;
 }
+
+@media screen and (max-width:810px){
+    .page{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .input_block{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:513px){
+    .title{
+        text-align: center;
+    }
+}

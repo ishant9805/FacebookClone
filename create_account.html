@@ -8,6 +8,9 @@
   </head>
   <body>
     <div class="page">
+      <h3 id="DarkModetext">Dark Mode is OFF</h3>
+      <button onclick="darkMode()">Darkmode</button>
+      <button onclick="lightMode()">LightMode</button>
       <h2 class="title">facebook</h2>
       <div class="input_block">
         <h4 class="h1">Create a new account</h4>
@@ -70,6 +73,21 @@
         <button class="signin">Sign in</button><br>
         <a href="index.html"><button class="already_have_an_acc">Already have an account ?</button></a>
         </div>
+
+        <script>
+          function darkMode() {
+              let element = document.body;
+              let content = document.getElementById("DarkModetext");
+              element.className = "dark-mode";
+              content.innerText = "Dark Mode is ON";
+          }
+          function lightMode() {
+              let element = document.body;
+              let content = document.getElementById("DarkModetext");
+              element.className = "light-mode";
+              content.innerText = "Dark Mode is OFF";
+          }
+      </script>
       
   </body>
   </html>

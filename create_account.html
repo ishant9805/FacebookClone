@@ -1,93 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create new account</title>
-    <link rel="stylesheet" href="create_account_styles.css" />
-  </head>
-  <body>
-    <div class="page">
-      <h3 id="DarkModetext">Dark Mode is OFF</h3>
-      <button onclick="darkMode()">Darkmode</button>
-      <button onclick="lightMode()">LightMode</button>
-      <h2 class="title">facebook</h2>
-      <div class="input_block">
-        <h4 class="h1">Create a new account</h4>
-        <h6 class="h2">It's quick and easy.</h6>
-        <hr class="hr1" />
-        <div class="name_blocks">
-          <input
-            type="text"
-            name=""
-            id=""
-            class="inp fname"
-            placeholder="First-name"
-          />
-          <input
-            type="text"
-            name=""
-            id=""
-            class="inp lname"
-            placeholder="Last-name"
-          />
-        </div>
-        <input
-          type="text"
-          name=""
-          id=""
-          class="inp email"
-          placeholder="Email or Mobile"
-        /><br />
-        <input
-          type="password"
-          name=""
-          id=""
-          class="inp password"
-          placeholder="New password"
-        />
-        <br />
-        <h6 class="h6_date">Date of birth</h6>
-        <input type="date" name="" id="" class="inp date" />
-        <fieldset>
-        <legend>
-        <h5 class="Gender">Gender</h5></legend>
-        <div class="gender_div">
-          <input type="radio" name="gender" class="r_inp male" id="male" /><span
-            class="m"
-            >Male</span
-          >
-          <input
-            type="radio"
-            name="gender"
-            class="r_inp female"
-            id="female"
-          /><span class="f">Female</span>
-          <input
-            type="radio"
-            name="gender"
-            class="r_inp others"
-            id="others"
-          /><span class="o">Others</span></div></fieldset>
-          <p class="p1">People who use our service may have uploaded your contact information to Facebook. <span class="sp"> Learn more.</span> <br> By clicking Sign Up, you agree to our <span class="sp"> Terms , Privacy Policy </span>and <span class="sp">Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.</p>
-        <button class="signin">Sign in</button><br>
-        <a href="index.html"><button class="already_have_an_acc">Already have an account ?</button></a>
-        </div>
 
-        <script>
-          function darkMode() {
-              let element = document.body;
-              let content = document.getElementById("DarkModetext");
-              element.className = "dark-mode";
-              content.innerText = "Dark Mode is ON";
-          }
-          function lightMode() {
-              let element = document.body;
-              let content = document.getElementById("DarkModetext");
-              element.className = "light-mode";
-              content.innerText = "Dark Mode is OFF";
-          }
-      </script>
-      
-  </body>
-  </html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create new account</title>
+  <link rel="stylesheet" href="create_account_styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <h2 class="title">facebook</h2>
+    <div class="input_block">
+      <h4 class="h1">Create a new account</h4>
+      <h6 class="h2">It's quick and easy.</h6>
+      <hr class="hr1" />
+      <div class="name_blocks">
+        <input type="text" name="" id="fname" class="inp fname" placeholder="First Name" />
+        <input type="text" name="" id="lname" class="inp lname" placeholder="Surname" />
+      </div>
+      <input type="text" name="" id="" class="inp email" placeholder="Email or Mobile" /><br />
+      <input type="password" name="" id="" class="inp password" placeholder="New password" />
+      <br />
+      <h6 class="h6_date">Date of birth</h6>
+      <input type="date" name="" id="" class="inp date" />
+
+      <h6 class="Gender">Gender</h6>
+      <div class="gender_div">
+        <span class="gender_wrap">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" class="r_inp female" id="female" />
+        </span>
+        <span class="gender_wrap">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" class="r_inp male" id="male" />
+        </span>
+        <span class="gender_wrap">
+          <label for="others">Others</label>
+          <input type="radio" name="gender" class="r_inp others" id="others" />
+        </span>
+      </div>
+
+      <p class="p1">People who use our service may have uploaded your contact information to Facebook. <span class="sp">
+          Learn more.</span> <br><br> By clicking Sign Up, you agree to our <span class="sp"> Terms , Privacy Policy
+        </span>and <span class="sp">Cookies Policy.</span> You may receive SMS notifications from us and can opt out at
+        any time.</p>
+      <div class="sign-up-button">
+        <button class="signin">Sign Up</button>
+      </div>
+      <div class="already-have">
+        <a href="index.html"><button class="already_have_an_acc">Already have an account ?</button></a>
+      </div>
+
+    </div>
+
+    <script>
+      function darkMode() {
+        let element = document.body;
+        let content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        let element = document.body;
+        let content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+
+</body>
+
+</html>

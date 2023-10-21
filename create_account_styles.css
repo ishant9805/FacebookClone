@@ -153,3 +153,13 @@ fieldset{
         text-align: center;
     }
 }
+
+.dark-mode {
+    background-color: black;
+    color: blue;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}

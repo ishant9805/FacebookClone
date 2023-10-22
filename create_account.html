@@ -9,8 +9,8 @@
   <body>
     <div class="page">
       <h3 id="DarkModetext">Dark Mode is OFF</h3>
-      <button onclick="darkMode()">Darkmode</button>
-      <button onclick="lightMode()">LightMode</button>
+      <input type="checkbox" id="darkModeToggle" class="toggle-switch" />
+      <label for="darkModeToggle" class="toggle-label">Check to change the mode</label>
       <h2 class="title">facebook</h2>
       <div class="input_block">
         <h4 class="h1">Create a new account</h4>
@@ -75,19 +75,19 @@
         </div>
 
         <script>
-          function darkMode() {
-              let element = document.body;
-              let content = document.getElementById("DarkModetext");
-              element.className = "dark-mode";
-              content.innerText = "Dark Mode is ON";
-          }
-          function lightMode() {
-              let element = document.body;
-              let content = document.getElementById("DarkModetext");
-              element.className = "light-mode";
-              content.innerText = "Dark Mode is OFF";
-          }
-      </script>
+          const darkModeToggle = document.getElementById("darkModeToggle");
+          const darkModeText = document.getElementById("DarkModetext");
+      
+          darkModeToggle.addEventListener("change", () => {
+            if (darkModeToggle.checked) {
+              document.body.classList.add("dark-mode");
+              darkModeText.innerText = "Dark Mode is ON";
+            } else {
+              document.body.classList.remove("dark-mode");
+              darkModeText.innerText = "Dark Mode is OFF";
+            }
+          });
+        </script>
       
   </body>
   </html>

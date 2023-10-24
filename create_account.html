@@ -71,8 +71,29 @@
           /><span class="o">Others</span></div></fieldset>
           <p class="p1">People who use our service may have uploaded your contact information to Facebook. <span class="sp"> Learn more.</span> <br> By clicking Sign Up, you agree to our <span class="sp"> Terms , Privacy Policy </span>and <span class="sp">Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.</p>
         <button class="signin">Sign in</button><br>
+
+
         <a href="index.html"><button class="already_have_an_acc">Already have an account ?</button></a>
-        </div>
+      </div>
+
+    </div>
+
+    <script>
+      function darkMode() {
+        let element = document.body;
+        let content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        let element = document.body;
+        let content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+
+</body>
 
         <script>
           const darkModeToggle = document.getElementById("darkModeToggle");

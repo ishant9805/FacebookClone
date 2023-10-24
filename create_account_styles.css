@@ -1,155 +1,196 @@
-body{
-    background-color:rgb(243, 240, 240);
+body {
+    background-color: rgb(243, 240, 240);
 
 }
 
-.title{
-    font-size:1.5cm;
-    font-family:Arial, Helvetica, sans-serif;
-    color:#0073ff;
+.title {
+    font-size: 1.5cm;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0073ff;
     margin-top: 25px;
     text-align: center;
 }
-.input_block{
-    width:430px;
-    background-color:white;
-    margin:auto;
-    margin-top:10px;
-    padding:0px 30px;
-    margin-bottom:50px;
-    border:1px solid white;
-    border-radius:7px;
+
+.input_block {
+    width: 430px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 16px 20px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    border-radius: 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
-.h1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:.66cm;
-    font-weight:900;
-    padding-top:20px;
-    padding-left:90px;
+.h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .66cm;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-left: 90px;
 }
 
-.h2{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight:500;
-    font-size:.35cm;
-    margin-left:160px;
-    margin-top:-20px;
-    color:rgb(81, 81, 81);
+.h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: .35cm;
+    margin-left: 160px;
+    margin-top: -20px;
+    color: rgb(81, 81, 81);
 }
 
-.hr1{
-    color:grey;
+.hr1 {
+    color: grey;
 }
 
-.inp{
-    height:35px;
-    width:170px;    
-    border:1.7px solid rgb(203, 203, 203);
-    padding-left:20px;
-    font-size:.43cm;
-    color:rgb(48, 47, 47);
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius:7px;
-    margin-top:15px;
+.inp {
+    height: 35px;
+    width: 96%;
+    border: 1.7px solid rgb(203, 203, 203);
+    font-size: .43cm;
+    color: rgb(48, 47, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+    margin-top: 15px;
+    padding-left: 1em;
 }
 
-.lname{
-    margin-left:20px;
+.name_blocks {
+    display: flex;
+    justify-content: space-between;
 }
 
-.email{
-    margin-top:23px;
-    width:90.5%;
-}
-.password{
-    margin-top:23px;
-    width:90.5%;
-}
-.h6_date,.Gender{
-    font-family:Arial, Helvetica, sans-serif;
-    color:rgb(66, 66, 66);
-    font-size:.33cm;
-}
-.date{
-    margin-top:-30px;
-    width:200px;
-}
-.r_inp{
-    margin-top:-25px;
-    margin-left:90px
-}
-.m,.f,.o{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:.46cm;
-    color:rgb(110, 109, 109);
-}
-.male{
-    margin-left:0px;
-}
-fieldset{
-   border:1.5px solid rgb(203, 203, 203);
+#lname {
+    width: 44%;
 }
 
-.p1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:.33cm;
-    font-weight:400;
-    color:rgb(82, 82, 82)
+#fname {
+    width: 44%;
 }
 
-.signin{
-    padding:5px 7px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:.5cm;
-    background-color:#42b72a;
-    color:white;
-    border:1px solid #42b72a;
-    border-radius:4px;
-    margin-top:30px;
-    margin-left:180px;
-    cursor:pointer;
+.date {
+    height: 38px;
 }
 
-.signin:hover{
-    background-color:#2f7c20;
+
+.h6_date,
+.Gender {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(66, 66, 66);
+    font-size: .33cm;
+    margin: 0px;
+    margin-top: 2em;
 }
 
-.already_have_an_acc{
-    background-color:transparent;
-    border:none;
-    color:#0073ff;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:.4cm;
-    margin-top:20px;
-    margin-left:120px;
-    padding-bottom:30px;
-    cursor:pointer;
+.gender_div {
+    display: flex;
+    justify-content: space-between;
 }
 
-.already_have_an_acc:hover{
-    color:#0c4a96;
+.gender_wrap {
+    background-color: #fff;
+    border: 1px solid #ccd0d5;
+    box-sizing: border-box;
+    display: flex;
+    height: 36px;
+    margin: 8px 0px 6px;
+    padding: 0px 3px 0px 8px;
+    width: 32%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
 }
 
-.sp{
-    color:#0073ff;
-    cursor:pointer;
+.gender_wrap label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
-@media screen and (max-width:810px){
-    .page{
+.p1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .33cm;
+    font-weight: 400;
+    color: rgb(82, 82, 82)
+}
+
+.signin {
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif!important;
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    overflow: hidden;
+    padding: 4px 32px;
+    text-shadow: none;
+    font-weight: bold!important;
+    letter-spacing: normal;
+    text-rendering: optimizelegibility;
+    min-width: 208px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 126%;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sign-up-button {
+    width: 100%;
+    text-align: center;
+}
+
+.already-have {
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.signin:hover {
+    background-color: #2f7c20;
+}
+
+.already_have_an_acc {
+    background: transparent;
+    border: none;
+    color: #1877f2;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.already_have_an_acc:hover {
+    color: #0c4a96;
+}
+
+.sp {
+    color: #0073ff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:810px) {
+    .page {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    .input_block{
+
+    .input_block {
         height: fit-content;
     }
 }
 
-@media screen and (max-width:513px){
-    .title{
+@media screen and (max-width:513px) {
+    .title {
         text-align: center;
     }
 }
